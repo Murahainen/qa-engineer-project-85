@@ -155,3 +155,45 @@
     3. Нажимаем на кнопку "Create Battle".
   expected-result: |     
     Игра по заданию "boom" успешно создана.      
+
+- summary: |
+    Проверка возможности победы в игре.
+  requirement: |
+    Игрок должен иметь возможность побеждать в состязании.
+  prerequisites: |
+    Пользователь авторизован.
+  test-data: |
+    const _ = require("lodash");
+    const R = require("rambda");
+    const solution = (width, length) => {
+    return width * length;
+    };
+    module.exports = solution;
+  steps:
+    1. Выбираем одну звезду в поле "Level".
+    2. Нажимаем кнопку "With a bot" (Game Type).
+    3. Выбираем задание "rect_area" во вкладке "Choose task by name or tags".
+    4. Нажимаем на кнопку "Create Battle".
+    5. В появившеся диалоговом окне выбираем язык node.js 16.17.0
+    6. Вводим код из "test-data".
+    7. Нажимаем кнопку "Run".
+  expected-result: |     
+    Появляется сообщение о победе в игре.          
+
+- summary: |
+    Проверка возможности проигрыша в игре.
+  requirement: |
+    Игрок должен иметь возможность проигрывать в состязании.
+  prerequisites: |
+    Пользователь авторизован.
+  test-data: |
+    Отсутствует.
+  steps:
+    1. Нажимаем кнопку "With a bot" (Game Type).
+    2. Выставляем ползунок "Time Control" в крайне левое положение.
+    3. Нажимаем на кнопку "Create Battle".
+    4. Ждем три минуты.
+  expected-result: |     
+    Появляется сообщение о поражении. 
+
+    
