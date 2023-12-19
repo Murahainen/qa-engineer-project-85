@@ -8,10 +8,10 @@
   test-data: |
     Отсутствует.
   steps:
-    1. Вводим Nickname.
-    2. Вводим Emeil.
-    3. Вводим Password (и подтверждение пароля).
-    4. Нажимаем кнопку "Submit".
+    - Вводим Nickname.
+    - Вводим Emeil.
+    - Вводим Password (и подтверждение пароля).
+    - Нажимаем кнопку "Submit".
   expected-result: |
     Успешная регистрация пользователя.
     
@@ -24,9 +24,9 @@
   test-data: |
     Email = email, Password = password.
   steps:
-    1. Вводим Emeil.
-    2. Вводим Password.
-    3. Нажимаем кнопку "Submit".
+    - Вводим Emeil.
+    - Вводим Password.
+    - Нажимаем кнопку "Submit".
   expected-result: |     
     Успешная авторизация пользователя.
 
@@ -65,9 +65,9 @@
   test-data: |
     Отсутствует.
   steps:
-    1. Нажимаем на кнопку "Create a game".
-    2. Нажимаем на кнопку "With a bot" (Game Type). 
-    3. Нажимаем на кнопку "Create Battle".
+    - Нажимаем на кнопку "Create a game".
+    - Нажимаем на кнопку "With a bot" (Game Type). 
+    - Нажимаем на кнопку "Create Battle".
   expected-result: |     
     Игра успешно создана.
 
@@ -93,10 +93,10 @@
   test-data: |
     Отсутствует.
   steps:
-    1. Нажимаем на кнопку "Create Game".
-    2. Нажимаем на кнопку "With others users" (Game Type). 
-    3. Нажимаем на кнопку "Create Battle".
-    4. Пользователь 2 (случайный игрок) принимает запрос, игра начинается.
+    - Нажимаем на кнопку "Create Game".
+    - Нажимаем на кнопку "With others users" (Game Type). 
+    - Нажимаем на кнопку "Create Battle".
+    - Пользователь 2 (случайный игрок) принимает запрос, игра начинается.
   expected-result: |     
     Игра с другим (случайным) игроком успешно создана.
 
@@ -109,11 +109,11 @@
   test-data: |
     Отсутствует.
   steps:
-    1. Нажимаем на кнопку "Create Game".
-    2. Нажимаем на кнопку "With a friend" (Game Type).
-    3. Во вкладке "Choose opponent" выбираем оппонента. 
-    4. Нажимаем на кнопку "Create Battle".
-    5. Пользователь 2 принимает запрос, игра начинается.
+    - Нажимаем на кнопку "Create Game".
+    - Нажимаем на кнопку "With a friend" (Game Type).
+    - Во вкладке "Choose opponent" выбираем оппонента. 
+    - Нажимаем на кнопку "Create Battle".
+    - Пользователь 2 принимает запрос, игра начинается.
   expected-result: |     
     Игра с другом (выбранным пользователем) успешно создана. 
 
@@ -126,13 +126,13 @@
   test-data: |
     Отсутствует.
   steps:
-    1. Нажимаем на кнопку "Create Game".
-    2. Нажимаем на кнопку "With a friend" (Game Type).
-    3. Во вкладке "Choose opponent" выбираем оппонента. 
-    4. Нажимаем Ctrl+Shift+I (Открываем "DevTools").
-    5. Выбираем вкладку "Networks".
-    6. Нажимаем на кнопку "Create Battle" ("Codebattle").
-    7. Изучаем содержимое и статус запросов.
+    - Нажимаем на кнопку "Create Game".
+    - Нажимаем на кнопку "With a friend" (Game Type).
+    - Во вкладке "Choose opponent" выбираем оппонента. 
+    - Нажимаем Ctrl+Shift+I (Открываем "DevTools").
+    - Выбираем вкладку "Networks".
+    - Нажимаем на кнопку "Create Battle" ("Codebattle").
+    - Изучаем содержимое и статус запросов.
   expected-result: |     
     https://mc.yandex.com/clmap/56557825?page-url=https%3A%2F%2Fcodebattle.hexlet.io%2F%23lobby&pointer-
     click=rn%3A589582603%3Ax%3A34308%3Ay%3A40959%3At%3A970%3Ap%3A%3FAA1AAA2%3AX%3A773%3AY%3A690&browser-
@@ -150,10 +150,10 @@
   test-data: |
     Отсутствует.
   steps:
-    1. Нажимаем на кнопку "Create Game".
-    2. Выбираем четыре звезды в поле "Level".
-    3. Нажимаем кнопку "With a bot" (Game Type).
-    4. Нажимаем на кнопку "Create Battle".
+    - Нажимаем на кнопку "Create Game".
+    - Выбираем четыре звезды в поле "Level".
+    - Нажимаем кнопку "With a bot" (Game Type).
+    - Нажимаем на кнопку "Create Battle".
   expected-result: |     
     Игра четвертого (максимального) уровня сложности успешно создана.   
 
@@ -166,10 +166,10 @@
   test-data: |
     Отсутствует.
   steps:
-    1. Нажимаем на кнопку "Create Game".
-    2. Нажимаем на кнопку "With a bot" (Game Type).
-    3. Выбираем задание "boom" во вкладке "Choose task by name or tags".
-    4. Нажимаем на кнопку "Create Battle".
+    - Нажимаем на кнопку "Create Game".
+    - Нажимаем на кнопку "With a bot" (Game Type).
+    - Выбираем задание "boom" во вкладке "Choose task by name or tags".
+    - Нажимаем на кнопку "Create Battle".
   expected-result: |     
     Игра по заданию "boom" успешно создана.      
 
@@ -187,14 +187,14 @@
     };
     module.exports = solution;
   steps:
-    1. Нажимаем на кнопку "Create Game".
-    2. Выбираем одну звезду в поле "Level".
-    3. Нажимаем на кнопку "With a bot" (Game Type).
-    4. Выбираем задание "rect_area" во вкладке "Choose task by name or tags".
-    5. Нажимаем на кнопку "Create Battle".
-    6. В появившеся диалоговом окне выбираем язык node.js 16.17.0
-    7. Вводим код из "test-data".
-    8. Нажимаем кнопку "Run".
+    - Нажимаем на кнопку "Create Game".
+    - Выбираем одну звезду в поле "Level".
+    - Нажимаем на кнопку "With a bot" (Game Type).
+    - Выбираем задание "rect_area" во вкладке "Choose task by name or tags".
+    - Нажимаем на кнопку "Create Battle".
+    - В появившеся диалоговом окне выбираем язык node.js 16.17.0
+    - Вводим код из "test-data".
+    - Нажимаем кнопку "Run".
   expected-result: |     
     Появляется сообщение о победе в игре.          
 
@@ -207,11 +207,11 @@
   test-data: |
     Отсутствует.
   steps:
-    1. Нажимаем на кнопку "Create Game".
-    2. Нажимаем на кнопку "With a bot" (Game Type).
-    3. Выставляем ползунок "Time Control" в крайне левое положение.
-    4. Нажимаем на кнопку "Create Battle".
-    5. Ждем три минуты.
+    - Нажимаем на кнопку "Create Game".
+    - Нажимаем на кнопку "With a bot" (Game Type).
+    - Выставляем ползунок "Time Control" в крайне левое положение.
+    - Нажимаем на кнопку "Create Battle".
+    - Ждем три минуты.
   expected-result: |     
     Появляется сообщение о поражении. 
 
@@ -225,9 +225,9 @@
     В поле "Create a new tournament" значения выставлены по умолчанию.
     Отсутствует.
   steps:
-    1. Заходим во вкладку "Tournaments".
-    2. Кликаем "Tournaments Info".
-    3. Нажимаем на кнопку "Create" (в поле "Create a new tournament").
+    - Заходим во вкладку "Tournaments".
+    - Кликаем "Tournaments Info".
+    - Нажимаем на кнопку "Create" (в поле "Create a new tournament").
   expected-result: |     
     Появляется сообщение о создании турнира в ближайшие несколько минут. 
     (Waiting Participants The tournament will start in...).  
