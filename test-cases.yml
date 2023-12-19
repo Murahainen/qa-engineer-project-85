@@ -6,7 +6,7 @@
   prerequisites: |
     Открыта страница регистрации ("Sign Up").
   test-data: |
-     Отсутствует.
+    Отсутствует.
   steps:
     1. Вводим Nickname.
     2. Вводим Emeil.
